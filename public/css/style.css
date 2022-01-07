@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "roboto";
+}
+
+header {
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+  position: relative;
+  z-index: 1;
+}
+header h1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-family: "shrikhand";
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.explore {
+  justify-content: center;
+  text-align: center;
+}
+.explore .explore-searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #e4e4e4;
+  padding: 16px;
+}
+.explore .explore-searchbar .fa-map-marker-alt {
+  padding-right: 15px;
+}
+.explore .explore-informations {
+  padding: 40px 65px 10px 65px;
+  background: #f1f1f1;
+}
+.explore .explore-informations h1 {
+  padding-bottom: 20px;
+}
+.explore .explore-cta {
+  background: #f1f1f1;
+  padding: 40px 40px 70px 40px;
+}
+.explore .explore-cta a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  padding: 15px 30px 15px 30px;
+  border-radius: 30px;
+}
+
+.instructions {
+  padding: 60px 20px;
+}
+.instructions h1 {
+  padding-bottom: 30px;
+}
+.instructions .instructions-step {
+  background: #f8f8f8;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+}
+
+.restaurants {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+.restaurants h1 {
+  padding-bottom: 20px;
+}
+.restaurants .restaurants-block {
+  background-color: white;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.restaurants .restaurants-block .restaurants-block__image {
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants .restaurants-block span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #99e2d0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: #278870;
+  font-weight: bold;
+}
+.restaurants .restaurants-block .restaurants-block__text {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
