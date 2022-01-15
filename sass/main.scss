@@ -4,3 +4,120 @@
 @import "./layout/footer";
 @import "./pages/index";
 @import "./components/buttons";
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: black;
+    .fa-arrow-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    h1 {
+      font-family: "shrikhand";
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}
+
+.menu {
+  background-color: $background-color;
+  .menu-title {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 270px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    h1 {
+      font-family: "shrikhand";
+      font-size: 1.7em;
+    }
+    .fa-heart {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.category {
+  h2 {
+    padding-top: 40px;
+    font-weight: 300;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+
+    margin: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 5;
+      top: 85%;
+      margin: 10px auto;
+      width: 13%;
+      height: 4px;
+      background: $color-tertiary;
+    }
+  }
+
+  .category-choice__texte {
+    h3 {
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
+    p {
+      font-weight: 300;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+  }
+  .category-choice {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    .category-choice__validation {
+      display: none;
+    }
+  }
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px 80px 40px;
+  a {
+    text-decoration: none;
+    color: white;
+    background: $background-gradient;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+  }
+}

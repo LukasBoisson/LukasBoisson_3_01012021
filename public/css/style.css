@@ -176,4 +176,115 @@ footer ul a .fa-hands-helping {
   border-radius: 30px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: relative;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a .fa-arrow-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header a h1 {
+  font-family: "shrikhand";
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}
+
+.menu {
+  background-color: #e4e4e4;
+}
+.menu .menu-title {
+  background-color: #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 270px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.menu .menu-title h1 {
+  font-family: "shrikhand";
+  font-size: 1.7em;
+}
+.menu .menu-title .fa-heart {
+  font-size: 1.5em;
+}
+
+.category h2 {
+  padding-top: 40px;
+  font-weight: 300;
+  font-size: 1.3em;
+  padding-bottom: 5px;
+  margin: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.category h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 5;
+  top: 85%;
+  margin: 10px auto;
+  width: 13%;
+  height: 4px;
+  background: #99e2d0;
+}
+.category .category-choice__texte h3 {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.category .category-choice__texte p {
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.category .category-choice {
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.category .category-choice .category-choice__validation {
+  display: none;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px 80px 40px;
+}
+.order a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  padding: 15px 30px 15px 30px;
+  border-radius: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
