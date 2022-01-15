@@ -7,8 +7,6 @@
 
     <title>Ohmyfood!</title>
 
-    <link rel="stylesheet" href="/public/css/style.css" />
-
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,10 +27,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
 
   <body>
-    <header>
+    <header class="home-header">
       <h1>ohmyfood</h1>
     </header>
 
@@ -58,18 +58,27 @@
       <h1>Fonctionnement</h1>
       <div class="instructions-step">
         <ol>
-          <li class="number">
-            <i class="fas fa-mobile-alt"></i>
-            <p>Choisissez un restaurant</p>
-          </li>
-          <li>
-            <i class="fas fa-list-ul"></i>
-            <p>Composez votre menu</p>
-          </li>
-          <li>
-            <i class="fas fa-store"></i>
-            <p>Dégustez au restaurant</p>
-          </li>
+          <div class="number">
+            <span>1</span>
+            <li>
+              <i class="fas fa-mobile-alt"></i>
+              <p>Choisissez un restaurant</p>
+            </li>
+          </div>
+          <div class="number">
+            <span>2</span>
+            <li>
+              <i class="fas fa-list-ul"></i>
+              <p>Composez votre menu</p>
+            </li>
+          </div>
+          <div class="number">
+            <span>3</span>
+            <li>
+              <i class="fas fa-store"></i>
+              <p>Dégustez au restaurant</p>
+            </li>
+          </div>
         </ol>
       </div>
     </section>
@@ -93,6 +102,7 @@
               <p>Ménilmontant</p>
             </div>
             <div class="like">
+              <i class="far fa-heart"></i>
               <i class="fas fa-heart"></i>
             </div>
           </div>

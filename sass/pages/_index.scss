@@ -1,0 +1,123 @@
+.explore {
+  justify-content: center;
+  text-align: center;
+
+  .explore-searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: $background-color;
+    padding: 16px;
+    .fa-map-marker-alt {
+      padding-right: 15px;
+    }
+  }
+
+  .explore-informations {
+    padding: 40px 65px 10px 65px;
+    background: lighten($background-color, 5%);
+    h1 {
+      padding-bottom: 20px;
+    }
+  }
+}
+.instructions {
+  padding: 60px 20px;
+  h1 {
+    padding-bottom: 30px;
+  }
+  .instructions-step {
+    ol {
+      padding: 0;
+      .number {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: flex-end;
+        span {
+          margin-bottom: 30px;
+          position: absolute;
+          background: $color-primary;
+          padding: 5px 9px;
+          border-radius: 14px;
+          left: 0px;
+          color: white;
+          font-size: 0.8em;
+        }
+      }
+      li {
+        background: lighten($background-color, 8%);
+        box-shadow: $header-shadow;
+        display: flex;
+        flex-direction: row;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 25px;
+        width: 320px;
+        &:hover {
+          background: lighten($color-primary, 36%);
+          .fas {
+            color: $color-primary;
+          }
+        }
+        .fas {
+          padding-right: 20px;
+          color: grey;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+.restaurants {
+  padding: 60px 20px;
+  background-color: lighten($background-color, 8%);
+
+  h1 {
+    padding-bottom: 20px;
+  }
+
+  .restaurants-block {
+    background-color: white;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    .restaurants-block__image {
+      height: 170px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+    span {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: $color-tertiary;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 0.8em;
+      color: darken($color-tertiary, 40%);
+      font-weight: bold;
+    }
+    .restaurants-block__text {
+      color: black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      h2 {
+        font-size: 1.2em;
+        padding-bottom: 7px;
+      }
+      .fa-heart {
+        font-size: 25px;
+        position: relative;
+      }
+    }
+  }
+}

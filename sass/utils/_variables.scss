@@ -1,0 +1,10 @@
+$header-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+$background-color: rgb(228, 228, 228);
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$background-gradient: linear-gradient(
+  to bottom right,
+  $color-secondary,
+  $color-primary
+);

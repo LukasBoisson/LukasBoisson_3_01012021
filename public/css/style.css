@@ -2,14 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "roboto";
+  text-decoration: none;
 }
 
-header {
+.home-header {
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
   position: relative;
   z-index: 1;
 }
-header h1 {
+.home-header h1 {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -17,6 +18,32 @@ header h1 {
   font-family: "shrikhand";
   padding-bottom: 15px;
   padding-top: 15px;
+}
+
+footer {
+  background-color: #333333;
+  padding: 30px 20px 40px 20px;
+}
+footer h2 {
+  font-family: "shrikhand";
+  color: white;
+  padding-bottom: 15px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul a {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-bottom: 10px;
+}
+footer ul a .fa-utensils {
+  padding-right: 16px;
+}
+footer ul a .fa-hands-helping {
+  padding-right: 10px;
 }
 
 .explore {
@@ -42,17 +69,6 @@ header h1 {
 .explore .explore-informations h1 {
   padding-bottom: 20px;
 }
-.explore .explore-cta {
-  background: #f1f1f1;
-  padding: 40px 40px 70px 40px;
-}
-.explore .explore-cta a {
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(#ff79da, #9356dc);
-  padding: 15px 30px 15px 30px;
-  border-radius: 30px;
-}
 
 .instructions {
   padding: 60px 20px;
@@ -60,9 +76,45 @@ header h1 {
 .instructions h1 {
   padding-bottom: 30px;
 }
-.instructions .instructions-step {
+.instructions .instructions-step ol {
+  padding: 0;
+}
+.instructions .instructions-step ol .number {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end;
+}
+.instructions .instructions-step ol .number span {
+  margin-bottom: 30px;
+  position: absolute;
+  background: #9356dc;
+  padding: 5px 9px;
+  border-radius: 14px;
+  left: 0px;
+  color: white;
+  font-size: 0.8em;
+}
+.instructions .instructions-step ol li {
   background: #f8f8f8;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  width: 320px;
+}
+.instructions .instructions-step ol li:hover {
+  background: #f4eefc;
+}
+.instructions .instructions-step ol li:hover .fas {
+  color: #9356dc;
+}
+.instructions .instructions-step ol li .fas {
+  padding-right: 20px;
+  color: grey;
+  font-size: 1.3em;
 }
 
 .restaurants {
@@ -102,6 +154,26 @@ header h1 {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+}
+.restaurants .restaurants-block .restaurants-block__text h2 {
+  font-size: 1.2em;
+  padding-bottom: 7px;
+}
+.restaurants .restaurants-block .restaurants-block__text .fa-heart {
+  font-size: 25px;
+  position: relative;
+}
+
+.explore-cta {
+  background: #f1f1f1;
+  padding: 40px 40px 70px 40px;
+}
+.explore-cta a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  padding: 15px 30px 15px 30px;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
