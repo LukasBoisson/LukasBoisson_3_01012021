@@ -25,37 +25,30 @@
 }
 .instructions {
   padding: 60px 20px;
+  align-items: center;
+  max-width: 355px;
+  margin: auto;
   h1 {
     padding-bottom: 30px;
   }
   .instructions-step {
     ol {
       padding: 0;
-      .number {
+
+      li {
         display: flex;
         align-items: center;
-        position: relative;
-        justify-content: flex-end;
-        span {
-          margin-bottom: 30px;
-          position: absolute;
-          background: $color-primary;
-          padding: 5px 9px;
-          border-radius: 14px;
-          left: 0px;
-          color: white;
-          font-size: 0.8em;
-        }
-      }
-      li {
-        background: lighten($background-color, 8%);
-        box-shadow: $header-shadow;
-        display: flex;
-        flex-direction: row;
+
         padding: 30px;
         margin-bottom: 30px;
+        margin-left: 10px;
         border-radius: 25px;
-        width: 320px;
+        max-width: 315px;
+
+        background: lighten($background-color, 8%);
+        box-shadow: $border-shadow;
+
+        position: relative;
         &:hover {
           background: lighten($color-primary, 36%);
           .fas {
@@ -66,6 +59,17 @@
           padding-right: 20px;
           color: grey;
           font-size: 1.3em;
+        }
+        span {
+          margin-bottom: 30px;
+          position: absolute;
+          background: $color-primary;
+          padding: 5px 9px;
+          border-radius: 14px;
+          left: -10px;
+          bottom: 0;
+          color: white;
+          font-size: 0.8em;
         }
       }
     }
@@ -85,6 +89,7 @@
     position: relative;
     margin-bottom: 20px;
     border-radius: 15px;
+    box-shadow: $border-shadow;
 
     .restaurants-block__image {
       height: 170px;
@@ -102,6 +107,7 @@
       font-size: 0.8em;
       color: darken($color-tertiary, 40%);
       font-weight: bold;
+      box-shadow: $border-shadow;
     }
     .restaurants-block__text {
       color: black;
@@ -114,9 +120,9 @@
         font-size: 1.2em;
         padding-bottom: 7px;
       }
+
       .fa-heart {
         font-size: 25px;
-        position: relative;
       }
     }
   }

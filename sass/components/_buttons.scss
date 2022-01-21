@@ -1,11 +1,41 @@
 .explore-cta {
-    background: lighten($background-color, 5%);
-    padding: 40px 40px 70px 40px;
-    a {
-      text-decoration: none;
-      color: white;
-      background: $background-gradient;
-      padding: 15px 30px 15px 30px;
-      border-radius: 30px;
+  background: lighten($background-color, 5%);
+  padding: 40px 40px 70px 40px;
+  a {
+    text-decoration: none;
+    color: white;
+    background: $background-gradient;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    box-shadow: $border-shadow;
+    &:hover {
+      background: linear-gradient(
+        to bottom right,
+        lighten($color-secondary, 5%),
+        lighten($color-primary, 5%)
+      );
     }
   }
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 40px 80px 40px;
+  a {
+    text-decoration: none;
+    color: white;
+    background: $background-gradient;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    box-shadow: $border-shadow;
+    &:hover {
+      background: linear-gradient(
+        to bottom right,
+        lighten($color-secondary, 5%),
+        lighten($color-primary, 5%)
+      );
+    }
+  }
+}

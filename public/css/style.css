@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,12 +6,12 @@
   text-decoration: none;
 }
 
-.home-header {
+#home-header {
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
   position: relative;
   z-index: 1;
 }
-.home-header h1 {
+#home-header h1 {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -20,11 +21,35 @@
   padding-top: 15px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a i {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+  font-size: 20px;
+}
+header a h1 {
+  font-family: "shrikhand";
+}
+
 footer {
   background-color: #333333;
   padding: 30px 20px 40px 20px;
 }
-footer h2 {
+footer h1 {
   font-family: "shrikhand";
   color: white;
   padding-bottom: 15px;
@@ -72,6 +97,9 @@ footer ul a .fa-hands-helping {
 
 .instructions {
   padding: 60px 20px;
+  align-items: center;
+  max-width: 355px;
+  margin: auto;
 }
 .instructions h1 {
   padding-bottom: 30px;
@@ -79,31 +107,17 @@ footer ul a .fa-hands-helping {
 .instructions .instructions-step ol {
   padding: 0;
 }
-.instructions .instructions-step ol .number {
+.instructions .instructions-step ol li {
   display: flex;
   align-items: center;
-  position: relative;
-  justify-content: flex-end;
-}
-.instructions .instructions-step ol .number span {
-  margin-bottom: 30px;
-  position: absolute;
-  background: #9356dc;
-  padding: 5px 9px;
-  border-radius: 14px;
-  left: 0px;
-  color: white;
-  font-size: 0.8em;
-}
-.instructions .instructions-step ol li {
-  background: #f8f8f8;
-  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
-  display: flex;
-  flex-direction: row;
   padding: 30px;
   margin-bottom: 30px;
+  margin-left: 10px;
   border-radius: 25px;
-  width: 320px;
+  max-width: 315px;
+  background: #f8f8f8;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+  position: relative;
 }
 .instructions .instructions-step ol li:hover {
   background: #f4eefc;
@@ -115,6 +129,17 @@ footer ul a .fa-hands-helping {
   padding-right: 20px;
   color: grey;
   font-size: 1.3em;
+}
+.instructions .instructions-step ol li span {
+  margin-bottom: 30px;
+  position: absolute;
+  background: #9356dc;
+  padding: 5px 9px;
+  border-radius: 14px;
+  left: -10px;
+  bottom: 0;
+  color: white;
+  font-size: 0.8em;
 }
 
 .restaurants {
@@ -129,6 +154,7 @@ footer ul a .fa-hands-helping {
   position: relative;
   margin-bottom: 20px;
   border-radius: 15px;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
 }
 .restaurants .restaurants-block .restaurants-block__image {
   height: 170px;
@@ -146,6 +172,7 @@ footer ul a .fa-hands-helping {
   font-size: 0.8em;
   color: #278870;
   font-weight: bold;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
 }
 .restaurants .restaurants-block .restaurants-block__text {
   color: black;
@@ -161,48 +188,6 @@ footer ul a .fa-hands-helping {
 }
 .restaurants .restaurants-block .restaurants-block__text .fa-heart {
   font-size: 25px;
-  position: relative;
-}
-
-.explore-cta {
-  background: #f1f1f1;
-  padding: 40px 40px 70px 40px;
-}
-.explore-cta a {
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  padding: 15px 30px 15px 30px;
-  border-radius: 30px;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  position: relative;
-}
-header a {
-  text-decoration: none;
-  color: black;
-}
-header a .fa-arrow-left {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-header a h1 {
-  font-family: "shrikhand";
-}
-
-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  position: relative;
 }
 
 .menu {
@@ -232,6 +217,9 @@ img {
   font-size: 1.5em;
 }
 
+.category {
+  /* animation plat qui défilent*/
+}
 .category h2 {
   padding-top: 40px;
   font-weight: 300;
@@ -263,14 +251,53 @@ img {
   justify-content: space-between;
   padding-right: 10px;
 }
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .category .category-choice {
   background-color: white;
   margin: 15px;
   padding: 10px;
   border-radius: 15px;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+  /* animation plat qui défilent*/
+  animation-name: animateIn;
+  animation-duration: 1000ms;
+  animation-delay: calc(var(--animation-order) * 100ms);
+  animation-fill-mode: both;
+  animation-timing-function: linear;
 }
 .category .category-choice .category-choice__validation {
   display: none;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}
+
+.explore-cta {
+  background: #f1f1f1;
+  padding: 40px 40px 70px 40px;
+}
+.explore-cta a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  padding: 15px 30px 15px 30px;
+  border-radius: 30px;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+}
+.explore-cta a:hover {
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
 
 .order {
@@ -285,6 +312,10 @@ img {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 15px 30px 15px 30px;
   border-radius: 30px;
+  box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+}
+.order a:hover {
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
 
 /*# sourceMappingURL=style.css.map */
