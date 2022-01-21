@@ -1,6 +1,13 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "roboto";
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "roboto";
+  text-decoration: none;
+}
+
+body {
+  @media (min-width: 1500px) {
+    max-width: 1500px;
+    margin: auto;
   }
+}

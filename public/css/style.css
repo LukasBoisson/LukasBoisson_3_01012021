@@ -6,6 +6,13 @@
   text-decoration: none;
 }
 
+@media (min-width: 1500px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
 #home-header {
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
   position: relative;
@@ -54,15 +61,33 @@ footer h1 {
   color: white;
   padding-bottom: 15px;
 }
+@media (min-width: 768px) {
+  footer h1 {
+    text-align: center;
+  }
+}
 footer ul {
   list-style-type: none;
   padding: 0;
+}
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 footer ul a {
   display: flex;
   flex-direction: row;
   color: white;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  footer ul a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 footer ul a .fa-utensils {
   padding-right: 16px;
@@ -98,14 +123,36 @@ footer ul a .fa-hands-helping {
 .instructions {
   padding: 60px 20px;
   align-items: center;
-  max-width: 355px;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .instructions {
+    max-width: 355px;
+  }
+}
+@media (min-width: 1024px) {
+  .instructions {
+    max-width: 1200px;
+  }
 }
 .instructions h1 {
   padding-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .instructions h1 {
+    text-align: center;
+  }
+}
 .instructions .instructions-step ol {
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .instructions .instructions-step ol {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .instructions .instructions-step ol li {
   display: flex;
@@ -114,10 +161,15 @@ footer ul a .fa-hands-helping {
   margin-bottom: 30px;
   margin-left: 10px;
   border-radius: 25px;
-  max-width: 315px;
   background: #f8f8f8;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
   position: relative;
+  max-width: 315px;
+}
+@media (min-width: 768px) {
+  .instructions .instructions-step ol li {
+    margin: 10px;
+  }
 }
 .instructions .instructions-step ol li:hover {
   background: #f4eefc;
@@ -146,8 +198,27 @@ footer ul a .fa-hands-helping {
   padding: 60px 20px;
   background-color: #f8f8f8;
 }
+@media (min-width: 768px) {
+  .restaurants .restaurants-blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurants .restaurants-blocks {
+    max-width: 1100px;
+  }
+}
 .restaurants h1 {
   padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .restaurants h1 {
+    text-align: center;
+  }
 }
 .restaurants .restaurants-block {
   background-color: white;
@@ -155,6 +226,11 @@ footer ul a .fa-hands-helping {
   margin-bottom: 20px;
   border-radius: 15px;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+}
+@media (min-width: 768px) {
+  .restaurants .restaurants-block {
+    width: 45%;
+  }
 }
 .restaurants .restaurants-block .restaurants-block__image {
   height: 170px;
