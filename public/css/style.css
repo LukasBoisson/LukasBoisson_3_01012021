@@ -11,6 +11,13 @@
   position: relative;
   z-index: 1;
 }
+@media (min-width: 1300px) {
+  #home-header {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
+}
 #home-header h1 {
   display: flex;
   flex-direction: row;
@@ -31,6 +38,13 @@ header {
   position: relative;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
 }
+@media (min-width: 1300px) {
+  header {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
+}
 header a {
   text-decoration: none;
   color: black;
@@ -48,6 +62,13 @@ header a h1 {
 footer {
   background-color: #333333;
   padding: 30px 20px 40px 20px;
+}
+@media (min-width: 1300px) {
+  footer {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
 }
 footer h1 {
   font-family: "shrikhand";
@@ -93,6 +114,13 @@ footer ul a .fa-hands-helping {
   justify-content: center;
   text-align: center;
 }
+@media (min-width: 1300px) {
+  .explore {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
+}
 .explore .explore-searchbar {
   display: flex;
   flex-direction: row;
@@ -105,11 +133,11 @@ footer ul a .fa-hands-helping {
 .explore .explore-searchbar .fa-map-marker-alt {
   padding-right: 15px;
 }
-.explore .explore-informations {
+.explore #explore-informations {
   padding: 40px 65px 10px 65px;
   background: #f1f1f1;
 }
-.explore .explore-informations h1 {
+.explore #explore-informations h1 {
   padding-bottom: 20px;
 }
 
@@ -191,8 +219,15 @@ footer ul a .fa-hands-helping {
   padding: 60px 20px;
   background-color: #f8f8f8;
 }
+@media (min-width: 1300px) {
+  .restaurants {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
+}
 @media (min-width: 768px) {
-  .restaurants .restaurants-blocks {
+  .restaurants #restaurants-blocks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -201,7 +236,7 @@ footer ul a .fa-hands-helping {
   }
 }
 @media (min-width: 1024px) {
-  .restaurants .restaurants-blocks {
+  .restaurants #restaurants-blocks {
     max-width: 1100px;
   }
 }
@@ -255,12 +290,16 @@ footer ul a .fa-hands-helping {
   font-size: 1.2em;
   padding-bottom: 7px;
 }
-.restaurants .restaurants-block .restaurants-block__text .fa-heart {
-  font-size: 25px;
-}
 
 .menu {
   background-color: #e4e4e4;
+}
+@media (min-width: 1300px) {
+  .menu {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
 }
 .menu .menu-title {
   background-color: #e4e4e4;
@@ -273,6 +312,13 @@ footer ul a .fa-hands-helping {
   top: 270px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+}
+@media (min-width: 1300px) {
+  .menu .menu-title {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
 }
 .menu .menu-title .menu-title-width {
   display: flex;
@@ -326,15 +372,23 @@ footer ul a .fa-hands-helping {
   background: #99e2d0;
 }
 .category .category-choice__texte h3 {
+  width: 300px;
   font-weight: 700;
   padding-bottom: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .category .category-choice__texte p {
+  width: 300px;
   font-weight: 300;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @keyframes animateIn {
   0% {
@@ -347,10 +401,13 @@ footer ul a .fa-hands-helping {
 }
 .category .category-choice {
   background-color: white;
+  display: flex;
+  flex-direction: row;
   margin: 15px;
-  padding: 10px;
   border-radius: 15px;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
+  overflow: hidden;
+  position: relative;
   /* animation plat qui défilent*/
   animation-name: animateIn;
   animation-duration: 1000ms;
@@ -366,22 +423,93 @@ footer ul a .fa-hands-helping {
     align-items: center;
   }
 }
+.category .category-choice .category-choice__price {
+  display: flex;
+  margin-left: auto;
+  padding-right: 10px;
+  margin-top: 37px;
+  font-weight: 700;
+  position: absolute;
+  right: 0px;
+}
 .category .category-choice .category-choice__validation {
-  display: none;
+  width: 70px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  left: 100%;
+  opacity: 0;
+}
+.category .category-choice .category-choice__validation .fas {
+  font-size: 1.5em;
+  padding: auto;
+  align-items: center;
+  color: white;
+  transform: rotate(90deg);
 }
 
-img {
+@keyframes check {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+@keyframes price {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-180%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.category-choice:hover .category-choice__price {
+  animation: price 1s forwards ease-in-out;
+}
+.category-choice:hover .category-choice__validation {
+  animation: check 1s forwards ease-in-out;
+}
+.category-choice:hover .category-choice__validation .fas {
+  animation: rotate 1s forwards linear;
+}
+
+@media (min-width: 1300px) {
+  section {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
+}
+section img {
   width: 100%;
   height: 250px;
   object-fit: cover;
   position: relative;
 }
 
-.explore-cta {
+#explore-cta {
   background: #f1f1f1;
   padding: 40px 40px 70px 40px;
 }
-.explore-cta a {
+#explore-cta a {
   text-decoration: none;
   color: white;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
@@ -389,7 +517,7 @@ img {
   border-radius: 30px;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
 }
-.explore-cta a:hover {
+#explore-cta a:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
 
@@ -409,6 +537,114 @@ img {
 }
 .order a:hover {
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+}
+
+.like {
+  position: relative;
+  right: 35px;
+  bottom: 15px;
+}
+.like .fa-heart {
+  position: absolute;
+  font-size: 30px;
+}
+.like .fas {
+  z-index: 1;
+  opacity: 0;
+}
+.like .fas:hover {
+  opacity: 1;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: fill;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#loader {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  margin: auto;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  transform-origin: 50%;
+  background: linear-gradient(-60deg, #9356dc, #99e2d0, #ff79da);
+  background-size: 200%;
+  animation: gradient 3s ease-in-out;
+  animation: loader-duration 3s;
+  animation-fill-mode: forwards;
+}
+#loader .fas {
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+}
+
+/* animation rotation à l'endroit*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate ease-in-out 3s;
+}
+
+/* animation rotation à l'envers*/
+@keyframes rotate-inverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-inverse {
+  animation: rotate reverse ease-in-out 3s;
+}
+
+/* animation couleur*/
+@keyframes gradient {
+  0% {
+    background-position: 50%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 50%;
+  }
+}
+/* disparition du loader*/
+@keyframes loader-duration {
+  0% {
+    transform: scale(1);
+  }
+  99.9% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

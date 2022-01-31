@@ -1,6 +1,11 @@
 .explore {
   justify-content: center;
   text-align: center;
+  @media (min-width: 1300px) {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
 
   .explore-searchbar {
     display: flex;
@@ -15,7 +20,7 @@
     }
   }
 
-  .explore-informations {
+  #explore-informations {
     padding: 40px 65px 10px 65px;
     background: lighten($background-color, 5%);
     h1 {
@@ -96,7 +101,12 @@
 .restaurants {
   padding: 60px 20px;
   background-color: lighten($background-color, 8%);
-  .restaurants-blocks {
+  @media (min-width: 1300px) {
+    max-width: 1300px;
+    justify-content: center;
+    margin: auto;
+  }
+  #restaurants-blocks {
     @media (min-width: 768px) {
       display: flex;
       flex-direction: row;
@@ -154,10 +164,6 @@
       h2 {
         font-size: 1.2em;
         padding-bottom: 7px;
-      }
-
-      .fa-heart {
-        font-size: 25px;
       }
     }
   }

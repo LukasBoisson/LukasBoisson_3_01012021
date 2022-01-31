@@ -28,10 +28,16 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
   </head>
 
   <body>
+    <div class="loading" id="loader">
+      <i class="fas fa-glass-cheers rotate"></i>
+      <i class="fas fa-concierge-bell rotate-inverse"></i>
+      <i class="fas fa-utensils rotate"></i>
+    </div>
+
     <header id="home-header">
       <h1>ohmyfood</h1>
     </header>
@@ -42,14 +48,14 @@
         <p>Paris, Belleville</p>
       </div>
 
-      <div class="explore-informations">
+      <div id="explore-informations">
         <h1>Réservez le menu qui vous convient</h1>
         <p>
           Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
       </div>
 
-      <div class="explore-cta">
+      <div id="explore-cta">
         <a href="#restaurants">Explorer nos restaurants</a>
       </div>
     </section>
@@ -79,7 +85,7 @@
 
     <main class="restaurants" id="restaurants">
       <h1>Restaurants</h1>
-      <div class="restaurants-blocks">
+      <div id="restaurants-blocks">
         <!-- Restaurant 1 -->
         <article class="restaurants-block">
           <a href="menu-la-palette-du-gout.html">
@@ -119,6 +125,7 @@
                 <p>Charonne</p>
               </div>
               <div class="like">
+                <i class="far fa-heart"></i>
                 <i class="fas fa-heart"></i>
               </div>
             </div>
@@ -140,6 +147,7 @@
                 <p>Cité Rouge</p>
               </div>
               <div class="like">
+                <i class="far fa-heart"></i>
                 <i class="fas fa-heart"></i>
               </div>
             </div>
@@ -161,6 +169,7 @@
                 <p>Folie-Méricourt</p>
               </div>
               <div class="like">
+                <i class="far fa-heart"></i>
                 <i class="fas fa-heart"></i>
               </div>
             </div>

@@ -1,0 +1,32 @@
+.like {
+  position: relative;
+  right: 35px;
+  bottom: 15px;
+  .fa-heart {
+    position: absolute;
+    font-size: 30px;
+  }
+  .fas {
+    z-index: 1;
+    opacity: 0;
+    &:hover {
+      opacity: 1;
+      background: linear-gradient(#9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation-name: fill;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes fill {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
