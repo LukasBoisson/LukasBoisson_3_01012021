@@ -18,14 +18,13 @@
     margin: auto;
   }
 }
-#home-header h1 {
+#home-header p {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: center;
   font-family: "shrikhand";
-  padding-bottom: 15px;
-  padding-top: 15px;
+  font-size: 2em;
 }
 
 header {
@@ -70,13 +69,13 @@ footer {
     margin: auto;
   }
 }
-footer h1 {
+footer h2 {
   font-family: "shrikhand";
   color: white;
   padding-bottom: 15px;
 }
 @media (min-width: 768px) {
-  footer h1 {
+  footer h2 {
     text-align: center;
   }
 }
@@ -110,18 +109,18 @@ footer ul a .fa-hands-helping {
   padding-right: 10px;
 }
 
-.explore {
+#explore {
   justify-content: center;
   text-align: center;
 }
 @media (min-width: 1300px) {
-  .explore {
+  #explore {
     max-width: 1300px;
     justify-content: center;
     margin: auto;
   }
 }
-.explore .explore-searchbar {
+#explore #explore-searchbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -130,52 +129,54 @@ footer ul a .fa-hands-helping {
   background: #e4e4e4;
   padding: 16px;
 }
-.explore .explore-searchbar .fa-map-marker-alt {
+#explore #explore-searchbar .fa-map-marker-alt {
   padding-right: 15px;
 }
-.explore #explore-informations {
+#explore #explore-informations {
   padding: 40px 65px 10px 65px;
   background: #f1f1f1;
 }
-.explore #explore-informations h1 {
+#explore #explore-informations h1 {
   padding-bottom: 20px;
+  font-size: 1.7em;
 }
 
-.instructions {
+#instructions {
   padding: 60px 20px;
   align-items: center;
   margin: auto;
 }
 @media (max-width: 767px) {
-  .instructions {
+  #instructions {
     max-width: 355px;
   }
 }
 @media (min-width: 1024px) {
-  .instructions {
+  #instructions {
     max-width: 1200px;
   }
 }
-.instructions h1 {
+#instructions h2 {
   padding-bottom: 30px;
+  font-size: 1.5em;
 }
 @media (min-width: 768px) {
-  .instructions h1 {
+  #instructions h2 {
     text-align: center;
   }
 }
-.instructions .instructions-step ol {
+#instructions #instructions-step ol {
   padding: 0;
   display: flex;
   flex-direction: column;
 }
 @media (min-width: 768px) {
-  .instructions .instructions-step ol {
+  #instructions #instructions-step ol {
     flex-direction: row;
     justify-content: space-around;
   }
 }
-.instructions .instructions-step ol li {
+#instructions #instructions-step ol li {
   display: flex;
   align-items: center;
   padding: 30px;
@@ -188,22 +189,22 @@ footer ul a .fa-hands-helping {
   max-width: 315px;
 }
 @media (min-width: 768px) {
-  .instructions .instructions-step ol li {
+  #instructions #instructions-step ol li {
     margin: 10px;
   }
 }
-.instructions .instructions-step ol li:hover {
+#instructions #instructions-step ol li:hover {
   background: #f4eefc;
 }
-.instructions .instructions-step ol li:hover .fas {
+#instructions #instructions-step ol li:hover .fas {
   color: #9356dc;
 }
-.instructions .instructions-step ol li .fas {
+#instructions #instructions-step ol li .fas {
   padding-right: 20px;
   color: grey;
   font-size: 1.3em;
 }
-.instructions .instructions-step ol li span {
+#instructions #instructions-step ol li span {
   margin-bottom: 30px;
   position: absolute;
   background: #9356dc;
@@ -215,19 +216,19 @@ footer ul a .fa-hands-helping {
   font-size: 0.8em;
 }
 
-.restaurants {
+#restaurants {
   padding: 60px 20px;
   background-color: #f8f8f8;
 }
 @media (min-width: 1300px) {
-  .restaurants {
+  #restaurants {
     max-width: 1300px;
     justify-content: center;
     margin: auto;
   }
 }
 @media (min-width: 768px) {
-  .restaurants #restaurants-blocks {
+  #restaurants #restaurants-blocks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -236,19 +237,11 @@ footer ul a .fa-hands-helping {
   }
 }
 @media (min-width: 1024px) {
-  .restaurants #restaurants-blocks {
+  #restaurants #restaurants-blocks {
     max-width: 1100px;
   }
 }
-.restaurants h1 {
-  padding-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .restaurants h1 {
-    text-align: center;
-  }
-}
-.restaurants .restaurants-block {
+#restaurants #restaurants-blocks .restaurants-block {
   background-color: white;
   position: relative;
   margin-bottom: 20px;
@@ -256,17 +249,17 @@ footer ul a .fa-hands-helping {
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
 }
 @media (min-width: 768px) {
-  .restaurants .restaurants-block {
+  #restaurants #restaurants-blocks .restaurants-block {
     width: 45%;
   }
 }
-.restaurants .restaurants-block .restaurants-block__image {
+#restaurants #restaurants-blocks .restaurants-block .restaurants-block__image {
   height: 170px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.restaurants .restaurants-block span {
+#restaurants #restaurants-blocks .restaurants-block span {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -278,7 +271,7 @@ footer ul a .fa-hands-helping {
   font-weight: bold;
   box-shadow: rgba(29, 29, 29, 0.378) 0px 10px 5px -9px;
 }
-.restaurants .restaurants-block .restaurants-block__text {
+#restaurants #restaurants-blocks .restaurants-block .restaurants-block__text {
   color: black;
   display: flex;
   flex-direction: row;
@@ -286,9 +279,17 @@ footer ul a .fa-hands-helping {
   justify-content: space-between;
   padding: 15px;
 }
-.restaurants .restaurants-block .restaurants-block__text h2 {
+#restaurants #restaurants-blocks .restaurants-block .restaurants-block__text h2 {
   font-size: 1.2em;
   padding-bottom: 7px;
+}
+#restaurants h2 {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #restaurants h2 {
+    text-align: center;
+  }
 }
 
 .menu {
