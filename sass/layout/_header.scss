@@ -2,8 +2,8 @@
   box-shadow: $border-shadow;
   position: relative;
   z-index: 1;
-  @media (min-width: 1300px) {
-    max-width: 1300px;
+  @media (min-width: 1500px) {
+    max-width: 1500px;
     justify-content: center;
     margin: auto;
   }
@@ -27,8 +27,8 @@ header {
   padding-top: 10px;
   position: relative;
   box-shadow: $border-shadow;
-  @media (min-width: 1300px) {
-    max-width: 1300px;
+  @media (min-width: 1500px) {
+    max-width: 1500px;
     justify-content: center;
     margin: auto;
   }

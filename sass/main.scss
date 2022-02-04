@@ -83,10 +83,14 @@
   0% {
     transform: scale(1);
   }
+  96% {
+    opacity: 1;
+  }
   99.9% {
     transform: scale(1);
   }
   100% {
     transform: scale(0);
+    opacity: 0;
   }
 }
