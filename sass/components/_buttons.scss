@@ -9,6 +9,7 @@
     border-radius: 30px;
     box-shadow: $border-shadow;
     &:hover {
+      box-shadow: $border-shadow-dark;
       background: linear-gradient(
         to bottom right,
         lighten($color-secondary, 5%),
@@ -31,6 +32,7 @@
     border-radius: 30px;
     box-shadow: $border-shadow;
     &:hover {
+      box-shadow: $border-shadow-dark;
       background: linear-gradient(
         to bottom right,
         lighten($color-secondary, 5%),

@@ -2,6 +2,7 @@
   box-shadow: $border-shadow;
   position: relative;
   z-index: 1;
+  cursor: pointer;
   @media (min-width: 1500px) {
     max-width: 1500px;
     justify-content: center;
@@ -41,8 +42,9 @@ header {
       top: 35%;
       font-size: 20px;
     }
-    h1 {
+    p {
       font-family: "shrikhand";
+      font-size: 32px;
     }
   }
 }

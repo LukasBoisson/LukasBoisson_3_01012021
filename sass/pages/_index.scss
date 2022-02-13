@@ -59,6 +59,7 @@
       }
 
       li {
+        cursor: not-allowed;
         display: flex;
         align-items: center;
         padding: 30px;
@@ -75,6 +76,7 @@
 
         &:hover {
           background: lighten($color-primary, 36%);
+          box-shadow: $border-shadow-dark;
           .fas {
             color: $color-primary;
           }
