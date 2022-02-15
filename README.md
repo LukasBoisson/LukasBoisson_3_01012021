@@ -21,7 +21,7 @@ Texte: Roboto
 - Secondaire: #FF79DA
 - Tertiaire: #99E2D0
 
---
+---
 
 ## Technologies
 
@@ -31,12 +31,16 @@ Texte: Roboto
 - Le code à été versionné sur GitHub et est accessible sur GitHub Pages.
   - https://github.com/LukasBoisson/LukasBoisson_3_01012022
   - https://lukasboisson.github.io/LukasBoisson_3_01012022/
+- L'éditeur de code utilisé pour ce projet est Visual Studio Code.
+  (avec les extensions Live Server et Prettier)
+
+- Si vous récuperez les fichiers du projet pensez à installer toutes les dépendances répertoriées dans le package.json avec la commande **npm i**
 
 ## Compatibilité
 
-Le site est responsive, il à été intégré en mobile first mais s'adapte également aux formats tablet et desktop.
+Le site est responsive, il a été intégré en mobile first mais s'adapte également aux formats tablet et desktop.
 
---
+---
 
 ## Livrables
 
